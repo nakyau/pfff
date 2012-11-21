@@ -197,6 +197,8 @@ let file_type_of_file2 file =
   | "txt" | "doc" -> Text e
   | "nw" | "web" -> Text e
 
+  | "pic" -> PL (Script e)
+
   | "org" 
   | "md" | "rest" | "textile" | "wiki"
     -> Text e
