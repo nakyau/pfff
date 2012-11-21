@@ -11,8 +11,10 @@ open OUnit
 (*****************************************************************************)
 
 let test_tokens_pic file = 
-  if not (file =~ ".*\\.lisp") 
-  then pr2 "warning: seems not a lisp file";
+  (match File_type.file_type_of_file file with
+  | File_type.PL (File_type.Lisp _) -> ()
+  | _ -> pr2 "warning: seems not a pic file";
+  );
 
   Flag.verbose_lexing := true;
   Flag.verbose_parsing := true;
