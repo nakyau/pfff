@@ -191,6 +191,8 @@ LIBS= commons/commons.cma \
      lang_nw/analyze/lib.cma \
     lang_lisp/parsing/lib.cma \
      lang_lisp/analyze/lib.cma \
+    lang_pic/parsing/lib.cma \
+     lang_pic/analyze/lib.cma \
     lang_haskell/parsing/lib.cma \
      lang_haskell/analyze/lib.cma \
     lang_php/parsing/lib.cma \
@@ -245,6 +247,8 @@ MAKESUBDIRS=commons \
    lang_nw/analyze \
   lang_lisp/parsing \
    lang_lisp/analyze \
+  lang_pic/parsing \
+   lang_pic/analyze \
   lang_haskell/parsing \
    lang_haskell/analyze \
   lang_php/parsing \
