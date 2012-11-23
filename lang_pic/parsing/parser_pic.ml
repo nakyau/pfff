@@ -50,13 +50,10 @@ let is_eof = function
   | EOF _ -> true
   | _ -> false
 
-let is_comment = function
-  | TComment _ | TCommentSpace _ | TCommentNewline _ -> true
-  | _ -> false 
+(* PIC has not token of comment *)
+let is_comment = false
 
-let is_just_comment = function
-  | TComment _ -> true
-  | _ -> false 
+let is_just_comment = false
 
 (*****************************************************************************)
 (* Visitors *)
